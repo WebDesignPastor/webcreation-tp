@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import logoTitle from "../../assets/images/logo-s.png";
-import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
+import Logo from './Logo'
+import './index.scss';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -37,6 +38,7 @@ const Home = () => {
         <h2>Full Stack Junior Developer / Ruby on Rails / HTML / CSS / Javascript </h2>
         <Link to="/contact" className='flat-button'>CONTACT ME</Link>
       </div>
+      <Logo />
     </div>
   )
 }
