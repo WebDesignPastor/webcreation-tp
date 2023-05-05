@@ -1,6 +1,8 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngular, faCss3, faGithub, faHtml5, faJs, faReact } from '@fortawesome/free-brands-svg-icons'
 
 const About = () => {
 
@@ -9,7 +11,7 @@ const About = () => {
   useEffect(() => {
     setTimeout(() => {
     setLetterClass('text-animate-hover')
-  }, 4000)
+  }, 3000)
   }, [])
 
   return (
@@ -29,6 +31,29 @@ Je suis compétent dans plusieurs langages de programmation, notamment Ruby, Pyt
 Au cours de mes études au Wagon, j'ai travaillé sur plusieurs projets intéressants, tels que la création d'une application web de gestion de tâches, d'une plateforme de réservation de cours en ligne et d'un site de vente de produits en ligne. J'ai également participé à des projets open source pour améliorer mes compétences et contribuer à la communauté.</p>
         <p>Mes objectifs :
 Je suis passionné par la technologie et je suis convaincu que la programmation peut changer le monde. Mon objectif est de travailler sur des projets innovants et de contribuer à créer des solutions qui répondent aux besoins de la société. Je suis également intéressé par les opportunités de travail à l'étranger et j'aimerais avoir la chance de travailler avec des équipes multiculturelles pour acquérir de nouvelles compétences et découvrir de nouveaux horizons.</p>
+      </div>
+
+      <div className="stage-cube-cont">
+        <div className="cubespinner">
+          <div className="face1">
+            <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+          </div>
+          <div className="face2">
+            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+          </div>
+          <div className="face3">
+            <FontAwesomeIcon icon={faCss3} color="#DD0031" />
+          </div>
+          <div className="face4">
+            <FontAwesomeIcon icon={faReact} color="#DD0031" />
+          </div>
+          <div className="face5">
+            <FontAwesomeIcon icon={faJs} color="#DD0031" />
+          </div>
+          <div className="face6">
+            <FontAwesomeIcon icon={faGithub} color="#DD0031" />
+          </div>
+        </div>
       </div>
     </div>
   )
