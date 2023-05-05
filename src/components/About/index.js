@@ -2,7 +2,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngular, faCss3, faGithub, faHtml5, faJs, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faAngular, faCss3, faElementor, faFigma, faGit, faGithub, faHtml5, faJs, faReact, faRebel, faSketch, faWordpress, faWpforms } from '@fortawesome/free-brands-svg-icons'
 
 const About = () => {
 
@@ -42,16 +42,37 @@ Je suis passionné par la technologie et je suis convaincu que la programmation 
             <FontAwesomeIcon icon={faHtml5} color="#F06529" />
           </div>
           <div className="face3">
-            <FontAwesomeIcon icon={faCss3} color="#DD0031" />
+            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
           </div>
           <div className="face4">
-            <FontAwesomeIcon icon={faReact} color="#DD0031" />
+            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
           </div>
           <div className="face5">
-            <FontAwesomeIcon icon={faJs} color="#DD0031" />
+            <FontAwesomeIcon icon={faJs} color="#EFD81D" />
           </div>
           <div className="face6">
-            <FontAwesomeIcon icon={faGithub} color="#DD0031" />
+            <FontAwesomeIcon icon={faGithub} color="#EC4D28" />
+          </div>
+          <div className="face7">
+            <FontAwesomeIcon icon={faGit} color="#EC4D28" />
+          </div>
+          <div className="face8">
+            <FontAwesomeIcon icon={faWordpress} color="#EC4D28" />
+          </div>
+          <div className="face9">
+            <FontAwesomeIcon icon={faFigma} color="#EC4D28" />
+          </div>
+          <div className="face10">
+            <FontAwesomeIcon icon={faRebel} color="#EC4D28" />
+          </div>
+          <div className="face11">
+            <FontAwesomeIcon icon={faElementor} color="#EC4D28" />
+          </div>
+          <div className="face12">
+            <FontAwesomeIcon icon={faWpforms} color="#EC4D28" />
+          </div>
+          <div className="face12">
+            <FontAwesomeIcon icon={faSketch} color="#EC4D28" />
           </div>
         </div>
       </div>
