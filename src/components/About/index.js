@@ -3,6 +3,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3, faElementor, faFigma, faGithub, faHtml5, faJs, faReact, faRebel, faSketch, faWordpress, faWpforms, faGitAlt } from '@fortawesome/free-brands-svg-icons'
+import Loader from 'react-loaders'
 
 const About = () => {
 
@@ -56,7 +57,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="second-stage-cube-cont">
+        {/* <div className="second-stage-cube-cont">
           <div className="cubespinner">
             <div className="face7">
               <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
@@ -77,8 +78,9 @@ const About = () => {
               <FontAwesomeIcon icon={faWpforms} color="#e1762f" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
+      <Loader type='pacman' />
     </>
   )
 }
