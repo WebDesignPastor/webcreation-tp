@@ -1,13 +1,25 @@
-.stage-cube-cont {
+.first-stage-cube-cont {
   width: 50%;
   height: 100%;
   top: 0;
-  padding-top: 18%;
+  padding-top: 15%;
   margin-left: 0;
   position: absolute;
   right: 0;
   overflow: hidden;
 }
+
+.second-stage-cube-cont {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  padding-top: 35%;
+  margin-left: 0;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
+
 
 .cubespinner {
   animation-name: spincube;
@@ -17,6 +29,67 @@
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
   margin-left: calc(50% - 100px);
+
+  div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 0px lightyellow;
+  }
+
+  .face1 {
+    transform: translateZ(100px);
+  }
+
+  .face2 {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+
+  .face3 {
+    transform: rotateY(180deg) translateZ(100px);
+  }
+
+  .face4 {
+    transform: rotateY(270deg) translateZ(100px);
+  }
+
+  .face5 {
+    transform: rotateX(90deg) translateZ(100px);
+  }
+
+  .face6 {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+
+  .face7 {
+    transform: translateZ(100px);
+  }
+
+  .face8 {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+
+  .face9 {
+    transform: rotateY(180deg) translateZ(100px);
+  }
+
+  .face10 {
+    transform: rotateY(270deg) translateZ(100px);
+  }
+
+  .face11 {
+    transform: rotateX(90deg) translateZ(100px);
+  }
+
+  .face12 {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
 }
 
   @keyframes spincube {
