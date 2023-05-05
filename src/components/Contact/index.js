@@ -23,6 +23,30 @@ const Contact = () => {
             idx={15}
             />
           </h1>
+          <p>
+            Vous pouvez me contacter par mail pour toute demande concernant un projet ou une collaboration. Je vous répondrai dans les plus brefs délais. A bientôt !
+          </p>
+          <div>
+            <form className='contact-form'>
+              <ul>
+                <li className='half'>
+                  <input type="text" name="name" placeholder='Name' required />
+                </li>
+                <li className='half'>
+                  <input type="email" name="email" placeholder='Email' required />
+                </li>
+                <li>
+                  <input type='text' name='subject' placeholder='Subject'  required />
+                </li>
+                <li>
+                  <textarea placeholder='Message' name='message' required></textarea>
+                </li>
+                <li>
+                  <input type="submit" className='flat-button' value='send'/>
+                </li>
+              </ul>
+            </form>
+          </div>
         </div>
       </div>
       <Loader type="pacman" />
