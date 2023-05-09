@@ -34,30 +34,7 @@ const About = () => {
           <p>Mes objectifs :
   Je suis passionné par la technologie et je suis convaincu que la programmation peut changer le monde. Mon objectif est de travailler sur des projets innovants et de contribuer à créer des solutions qui répondent aux besoins de la société. Je suis également intéressé par les opportunités de travail à l'étranger et j'aimerais avoir la chance de travailler avec des équipes multiculturelles pour acquérir de nouvelles compétences et découvrir de nouveaux horizons.</p>
         </div>
-
         <div className="first-stage-cube-cont">
-          <div className="cubespinner">
-            <div className="face1">
-              <FontAwesomeIcon icon={faSketch} color="#DD0031" />
-            </div>
-            <div className="face2">
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-            </div>
-            <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-            </div>
-            <div className="face4">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-            </div>
-            <div className="face5">
-              <FontAwesomeIcon icon={faJs} color="#EFD81D" />
-            </div>
-            <div className="face6">
-              <FontAwesomeIcon icon={faGithub} color="#000000" />
-            </div>
-          </div>
-        </div>
-        {/* <div className="second-stage-cube-cont">
           <div className="cubespinner">
             <div className="face7">
               <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
@@ -78,7 +55,7 @@ const About = () => {
               <FontAwesomeIcon icon={faWpforms} color="#e1762f" />
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
       <Loader type='pacman' />
     </>
