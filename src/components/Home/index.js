@@ -4,7 +4,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import Loader from 'react-loaders';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faElementor, faFigma, faGithub, faHtml5, faJs, faReact, faRebel, faSketch, faWordpress, faWpforms, faGitAlt } from '@fortawesome/free-brands-svg-icons'
+import { faCss3, faGithub, faHtml5, faJs, faReact, faSketch } from '@fortawesome/free-brands-svg-icons'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
