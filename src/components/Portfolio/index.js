@@ -1,6 +1,10 @@
 import AnimatedLetters from "../AnimatedLetters";
 import { useState, useEffect } from "react";
 import Loader from "react-loaders";
+import ProjectCard from './ProjectCard';
+import { projects } from "./projects";
+import './index.scss';
+
 
 const Portfolio = () => {
 
@@ -25,7 +29,11 @@ const Portfolio = () => {
             idx={15}
           />
         </h1>
-        <p>Page en construction</p>
+        <div className='portfolio'>
+          {projects.map(project => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
       </div>
     </div>
     <Loader type='pacman' />
