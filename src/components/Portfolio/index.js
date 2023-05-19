@@ -29,12 +29,12 @@ const Portfolio = () => {
             idx={15}
           />
         </h1>
-        <div className='portfolio'>
+      </div>
+      <div className='portfolio'>
           {projects.map(project => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
-      </div>
     </div>
     <Loader type='pacman' />
   </>

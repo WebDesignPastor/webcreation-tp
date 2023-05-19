@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
         ))}
       </ul>
       <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-        Live Preview
+        Voir le site
       </a>
     </div>
   );
