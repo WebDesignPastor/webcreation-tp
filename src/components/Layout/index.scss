@@ -36,6 +36,14 @@
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
+
+  @media (max-width: 768px) {
+    width: auto;
+    height: 100%;
+    top: -80px;
+    right: -10px;
+    margin: 0;
+  }
 }
 
 .about-page,
