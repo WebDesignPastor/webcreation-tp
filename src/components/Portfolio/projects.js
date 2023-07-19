@@ -10,6 +10,22 @@ import { faDatabase, faMapLocation } from "@fortawesome/free-solid-svg-icons";
 export const projects = [
   {
     id: 1,
+    title: "Breizh Secrets",
+    description: "Application Web de chasse aux trésors sur smartphone",
+    image: bsecrets,
+    technologies: [faSketch, faJs, faGitAlt, faHtml5, faFigma, faCss3, faBootstrap, faDatabase, faMapLocation, faGithub],
+    liveLink: "https://www.breizhsecrets.eu/",
+  },
+  {
+    id: 2,
+    title: "Izivernage",
+    description: "Application Web de gestion d'hivernage",
+    image: izivernage,
+    technologies: [faSketch, faJs, faGitAlt, faHtml5, faFigma, faCss3, faBootstrap, faDatabase, faMapLocation, faGithub],
+    liveLink: "https://izivernage.herokuapp.com/",
+  },
+  {
+    id: 6,
     title: "ArchiDrawing TP",
     description: "Micro-entreprise de dessin d'architecture",
     image: adtp,
@@ -17,7 +33,7 @@ export const projects = [
     liveLink: "https://archidrawingtp.fr/",
   },
   {
-    id: 2,
+    id: 5,
     title: "Kergonan Hivernage",
     description: "Entreprise de gardiennage de bateaux, caravanes et camping-car",
     image: kergohivernage,
@@ -39,21 +55,5 @@ export const projects = [
     image: alrelagage,
     technologies: [faWordpress, faCss3, faWpforms, faElementor, faFigma],
     liveLink: "https://alrelagage.fr/",
-  },
-  {
-    id: 5,
-    title: "Breizh Secrets",
-    description: "Application Web de chasse aux trésors sur smartphone",
-    image: bsecrets,
-    technologies: [faSketch, faJs, faGitAlt, faHtml5, faFigma, faCss3, faBootstrap, faDatabase, faMapLocation, faGithub],
-    liveLink: "https://www.breizhsecrets.eu/",
-  },
-  {
-    id: 6,
-    title: "Izivernage",
-    description: "Application Web de gestion d'hivernage",
-    image: izivernage,
-    technologies: [faSketch, faJs, faGitAlt, faHtml5, faFigma, faCss3, faBootstrap, faDatabase, faMapLocation, faGithub],
-    liveLink: "https://izivernage.herokuapp.com/",
   },
 ];

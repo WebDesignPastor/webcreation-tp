@@ -20,24 +20,16 @@ const Portfolio = () => {
 
   return (
     <>
-    <div className='container about-page'>
-      <div className='text-zone'>
-        <h1>
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={jobArray}
-            idx={15}
-          />
-        </h1>
-      </div>
-      <div className='portfolio'>
-          {projects.map(project => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
+        <div className='portfolio-wrapper'>
+          <div className='portfolio'>
+            {projects.map(project => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+          <div className="gradient-overlay"></div> {/* This is your gradient overlay */}
         </div>
-    </div>
-    <Loader type='pacman' />
-  </>
+        <Loader type='pacman' />
+    </>
   )
 }
 

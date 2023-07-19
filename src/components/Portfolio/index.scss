@@ -1,0 +1,42 @@
+.portfolio-wrapper {
+  position: relative;
+  max-height: 80vh;
+  padding: 60px 30px 0px 80px;
+  overflow-y: auto;
+}
+
+.portfolio {
+  display: grid;
+  grid-gap: 20px;
+  /* start with a single-column layout */
+  grid-template-columns: repeat(1, 1fr);
+  position: relative;
+}
+
+.gradient-overlay {
+  position: fixed;
+  content: '';
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  margin-bottom: 45px;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(transparent, #242f53);
+}
+
+/* For tablets and small desktop screens */
+@media (min-width: 481px) {
+  .portfolio {
+    /* Use a 2-column layout on larger screens */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For larger desktop screens */
+@media (min-width: 769px) {
+  .portfolio {
+    /* Use a 3-column layout on even larger screens */
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

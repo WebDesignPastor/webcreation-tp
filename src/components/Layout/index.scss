@@ -116,34 +116,3 @@
     }
   }
 }
-
-
-.portfolio {
-  width: 80%;
-  margin: 0 auto;
-  position: absolute;
-  top: 57%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: grid;
-  grid-gap: 20px;
-  max-height: 100vh;
-}
-
-@media (max-width: 768px) {
-  .portfolio {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .portfolio {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media (min-width: 768px) {
-  .portfolio {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
