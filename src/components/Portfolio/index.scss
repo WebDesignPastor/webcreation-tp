@@ -13,17 +13,17 @@
   position: relative;
 }
 
-.gradient-overlay {
-  position: fixed;
-  content: '';
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  margin-bottom: 15%;
-  height: 100px;
-  width: 100%;
-  background: linear-gradient(transparent, #242f53);
-}
+// .gradient-overlay {
+//   position: fixed;
+//   content: '';
+//   bottom: 0;
+//   left: 0;
+//   z-index: 0;
+//   margin-bottom: 15%;
+//   height: 100px;
+//   width: 100%;
+//   background: linear-gradient(transparent, #242f53);
+// }
 
 /* For tablets and small desktop screens */
 @media (min-width: 481px) {
