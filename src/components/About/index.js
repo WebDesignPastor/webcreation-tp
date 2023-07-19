@@ -1,8 +1,7 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faElementor, faFigma, faRebel, faWordpress, faWpforms, faGitAlt } from '@fortawesome/free-brands-svg-icons'
+import CubeSpinner from '../CubeSpinner'
 import Loader from 'react-loaders'
 
 const About = () => {
@@ -45,27 +44,8 @@ const About = () => {
             N'hésitez pas à me <a href="/contact">contacter</a> pour me parler de votre projet.
           </p>
         </div>
-        <div className="first-stage-cube-cont">
-          <div className="cubespinner">
-            <div className="face7">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-            </div>
-            <div className="face8">
-              <FontAwesomeIcon icon={faWordpress} color="#007298" />
-            </div>
-            <div className="face9">
-              <FontAwesomeIcon icon={faFigma} color="#a259ff" />
-            </div>
-            <div className="face10">
-              <FontAwesomeIcon icon={faRebel} color="#000000" />
-            </div>
-            <div className="face11">
-              <FontAwesomeIcon icon={faElementor} color="#92003b" />
-            </div>
-            <div className="face12">
-              <FontAwesomeIcon icon={faWpforms} color="#e1762f" />
-            </div>
-          </div>
+        <div>
+          <CubeSpinner cubeType="second" />
         </div>
       </div>
       <Loader type='pacman' />

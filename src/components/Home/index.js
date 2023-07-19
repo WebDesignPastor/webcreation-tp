@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import Loader from 'react-loaders';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faGithub, faHtml5, faJs, faReact, faSketch } from '@fortawesome/free-brands-svg-icons'
+import CubeSpinner from '../CubeSpinner';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -45,27 +44,8 @@ const Home = () => {
         <Link to="/contact" className='flat-button'>CONTACTEZ-MOI</Link>
       </div>
     </div>
-    <div className="first-stage-cube-cont">
-      <div className="cubespinner">
-        <div className="face1">
-          <FontAwesomeIcon icon={faSketch} color="#DD0031" />
-        </div>
-        <div className="face2">
-          <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-        </div>
-        <div className="face3">
-          <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-        </div>
-        <div className="face4">
-          <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-        </div>
-        <div className="face5">
-          <FontAwesomeIcon icon={faJs} color="#EFD81D" />
-        </div>
-        <div className="face6">
-          <FontAwesomeIcon icon={faGithub} color="#000000" />
-        </div>
-      </div>
+    <div>
+      <CubeSpinner cubeType="first" />
     </div>
     <Loader type='pacman'/>
     </>

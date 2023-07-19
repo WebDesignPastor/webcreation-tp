@@ -1,5 +1,6 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
+import CubeSpinner from '../CubeSpinner'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 
@@ -27,6 +28,9 @@ const About = () => {
           </h1>
           <h2>Page en Construction</h2>
         </div>
+      </div>
+      <div>
+        <CubeSpinner cubeType="third" />
       </div>
       <Loader type='pacman' />
     </>
