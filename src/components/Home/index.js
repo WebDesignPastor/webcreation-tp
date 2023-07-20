@@ -9,9 +9,9 @@ import CubeSpinner from '../CubeSpinner';
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
+  const greetingStr = 'François'
   const jobStr = 'Développeur Web'
   const jobStr2 = 'Full Stack'
-  const greetingStr = 'François'
 
   useEffect(() => {
       setTimeout(() => {
