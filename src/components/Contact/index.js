@@ -4,6 +4,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
+import TextZone from '../TextZone';
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -39,7 +40,7 @@ const Contact = () => {
   return (
     <>
       <div className='container contact-page'>
-        <div className="text-zone">
+        <TextZone className="contact-text-zone">
           <h1>
             <AnimatedLetters
             letterClass={letterClass}
@@ -71,11 +72,11 @@ const Contact = () => {
               </ul>
             </form>
           </div>
-        </div>
+        </TextZone>
         <div className="info-map">
           François PARMENTIER
           <br />
-          35132 Vezin-le-Coquet
+          06 60 75 94 17
           <span>webcreationtp@gmail.com</span>
         </div>
         <div className='map-wrap'>

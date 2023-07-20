@@ -3,11 +3,12 @@ import AnimatedLetters from '../AnimatedLetters'
 import CubeSpinner from '../CubeSpinner'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
+import TextZone from '../TextZone'
 
 const About = () => {
 
   const [letterClass, setLetterClass] = useState('text-animate')
-  const servicesStr = 'Services et tarification'
+  const servicesStr = 'Services'
 
   useEffect(() => {
     setTimeout(() => {
@@ -18,7 +19,7 @@ const About = () => {
   return (
     <>
       <div className='container about-page'>
-        <div className='text-zone'>
+        <TextZone className='services-text-zone'>
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
@@ -26,8 +27,8 @@ const About = () => {
               idx={5}
             />
           </h1>
-          <h2>Page en Construction</h2>
-        </div>
+          <p>Page en Construction</p>
+        </TextZone>
       </div>
       <div>
         <CubeSpinner cubeType="third" />

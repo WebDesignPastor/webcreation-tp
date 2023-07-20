@@ -7,6 +7,10 @@
 .top-tags {
   bottom: auto;
   top: 35px;
+
+  @media (max-width: 768px) {
+    top: 10px;
+  }
 }
 
 .tags {
@@ -17,10 +21,18 @@
   left: 70px;
   font-size: 18px;
   font-family: 'La Belle Aurore';
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .bottom-tag-html {
   margin-left: -20px;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 }
 
 .container {

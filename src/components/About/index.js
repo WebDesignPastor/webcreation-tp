@@ -20,7 +20,7 @@ const About = () => {
     <>
       <div className='container about-page'>
         <div className='content'>
-          <TextZone className={"text-zone"}>  {/* use TextZone component */}
+          <TextZone className={"about-text-zone"}>  {/* use TextZone component */}
             <h1>
               <AnimatedLetters
                 letterClass={letterClass}

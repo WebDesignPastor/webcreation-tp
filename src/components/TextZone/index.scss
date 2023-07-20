@@ -1,4 +1,4 @@
-.text-zone, .home-text-zone {
+.home-text-zone, .about-text-zone, .services-text-zone, .contact-text-zone {
   position: absolute;
   left: 10%;
   top: 50%;
@@ -17,29 +17,6 @@
     position: relative;
     margin-bottom: 40px;
     left: 10px;
-
-    &::before {
-      content: '<h1>';
-      font-family: 'la belle aurore';
-      font-size: 18px;
-      position: absolute;
-      margin-top: -10px;
-      left: -10px;
-      opacity: 0.6;
-      line-height: 18px;
-    }
-
-    &::after {
-      content: '</h1>';
-      font-family: 'la belle aurore';
-      font-size: 18px;
-      line-height: 18px;
-      position: absolute;
-      left: -30px;
-      bottom: -20px;
-      margin-left: 20px;
-      opacity: 0.6;
-    }
   }
 
   p {
@@ -68,17 +45,39 @@
   }
 }
 
-.text-zone {
+.contact-text-zone {
   @media (max-width: 768px) {
-    width: 80%;
+    width: 75%;
     top: 25%;
     left: 20%;
   }
 }
 
+.service-text-zone {
+  @media (max-width: 768px) {
+    width: 65%;
+    top: 25%;
+    left: 13%;
+  }
+}
+
+.about-text-zone {
+  @media (max-width: 768px) {
+    width: 65%;
+    top: 22%;
+    left: 13%;
+
+    height: 50%;
+    overflow: auto;
+  }
+
+}
+
 .home-text-zone {
   @media (max-width: 768px) {
-    // Add the styles for home page's responsive design here
+    width: 65%;
+    top: 25%;
+    left: 20%;
   }
 }
 
