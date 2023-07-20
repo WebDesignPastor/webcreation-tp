@@ -1,0 +1,12 @@
+.text-zone {
+  position: relative;
+  /* Remove the position-related styles as these will be passed as props */
+  width: 60%;
+  text-align: center;
+  max-height: none;
+
+  @media (min-width: 768px) {
+    max-height: 90%;
+    text-align: left;
+  }
+}

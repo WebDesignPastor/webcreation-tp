@@ -7,7 +7,7 @@ import Loader from 'react-loaders'
 const About = () => {
 
   const [letterClass, setLetterClass] = useState('text-animate')
-  const aboutArray = 'Services et tarification'.split('')
+  const servicesStr = 'Services et tarification'
 
   useEffect(() => {
     setTimeout(() => {
@@ -22,8 +22,8 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={aboutArray}
-              idx={2}
+              str={servicesStr}
+              idx={5}
             />
           </h1>
           <h2>Page en Construction</h2>

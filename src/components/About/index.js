@@ -7,7 +7,7 @@ import Loader from 'react-loaders'
 const About = () => {
 
   const [letterClass, setLetterClass] = useState('text-animate')
-  const aboutArray = 'A propos de moi'.split('')
+  const aboutStr = 'A propos de moi'
 
   useEffect(() => {
     setTimeout(() => {
@@ -22,7 +22,7 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={aboutArray}
+              str={aboutStr}
               idx={15}
             />
           </h1>

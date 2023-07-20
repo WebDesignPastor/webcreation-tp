@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
+import TextZone from '../TextZone';  // import TextZone
 import './index.scss';
 import Loader from 'react-loaders';
 import CubeSpinner from '../CubeSpinner';
@@ -8,8 +9,9 @@ import CubeSpinner from '../CubeSpinner';
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const jobArray = 'Développeur Web Full Stack'.split('')
-  const greetingArray = 'Bonjour,  je suis François'.split('')
+  const jobStr = 'Développeur Web'
+  const jobStr2 = 'Full Stack'
+  const greetingStr = 'François'
 
   useEffect(() => {
       setTimeout(() => {
@@ -20,29 +22,32 @@ const Home = () => {
   return (
     <>
     <div className="container home-page">
-      <div className="text-zone">
+      <TextZone>  {/* use TextZone component */}
         <h1>
-          {greetingArray.map((word, i) => (
-            <AnimatedLetters
-              key={`greeting-${i}`}
-              letterClass={letterClass}
-              strArray={word.split('')}
-              idx={5}
-            />
-          ))}
+          <AnimatedLetters
+            key={`greeting`}
+            letterClass={letterClass}
+            str={greetingStr}
+            idx={5}
+          />
           <br />
-          {jobArray.map((word, i) => (
-            <AnimatedLetters
-              key={`job-${i}`}
-              letterClass={letterClass}
-              strArray={word.split('')}
-              idx={5}
-            />
-          ))}
+          <AnimatedLetters
+            key={`job`}
+            letterClass={letterClass}
+            str={jobStr}
+            idx={5}
+          />
+          <br />
+          <AnimatedLetters
+            key={`job`}
+            letterClass={letterClass}
+            str={jobStr2}
+            idx={5}
+          />
         </h1>
         <h2>Développeur Junior Full Stack / Ruby on Rails / HTML / CSS / Javascript / ReactJS </h2>
         <Link to="/contact" className='flat-button'>CONTACTEZ-MOI</Link>
-      </div>
+      </TextZone>  {/* close TextZone component */}
     </div>
     <div>
       <CubeSpinner cubeType="first" />
