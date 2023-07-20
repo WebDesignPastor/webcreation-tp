@@ -1,5 +1,6 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
+import TextZone from '../TextZone'  // import TextZone
 import { useEffect, useState } from 'react'
 import CubeSpinner from '../CubeSpinner'
 import Loader from 'react-loaders'
@@ -19,7 +20,7 @@ const About = () => {
     <>
       <div className='container about-page'>
         <div className='content'>
-          <div className='text-zone'>
+          <TextZone className={"about-text-zone"}>  {/* use TextZone component */}
             <h1>
               <AnimatedLetters
                 letterClass={letterClass}
@@ -44,7 +45,7 @@ const About = () => {
               faits pour des entreprises de taille moyenne, mais aussi des projets plus simples pour des auto-entrepreneurs. Je reste à votre disposition pour vous aider à créer votre site web.
               N'hésitez pas à me <a href="/contact">contacter</a> pour me parler de votre projet.
             </p>
-          </div>
+          </TextZone>  {/* close TextZone component */}
           <div className='cube-zone'>
             <CubeSpinner cubeType="second" />
           </div>

@@ -1,8 +1,8 @@
 import React from 'react';
-import './index.scss'; // Assuming you will extract the relevant CSS into this file
+import './index.scss';
 
-const TextZone = ({ top, position, transform, maxHeight, width, textAlign, children }) => (
-  <div className="text-zone" style={{ top, position, transform, maxHeight, width, textAlign }}>
+const TextZone = ({ top, position, transform, maxHeight, width, textAlign, className, children }) => (
+  <div className={`text-zone ${className}`} style={{ top, position, transform, maxHeight, width, textAlign }}>
     {children}
   </div>
 );
