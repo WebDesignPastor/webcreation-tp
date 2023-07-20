@@ -8,7 +8,7 @@ import Loader from 'react-loaders'
 const About = () => {
 
   const [letterClass, setLetterClass] = useState('text-animate')
-  const aboutStr = 'A propos de moi'
+  const aboutStr = 'A propos'
 
   useEffect(() => {
     setTimeout(() => {
@@ -20,7 +20,7 @@ const About = () => {
     <>
       <div className='container about-page'>
         <div className='content'>
-          <TextZone className={"about-text-zone"}>  {/* use TextZone component */}
+          <TextZone className={"text-zone"}>  {/* use TextZone component */}
             <h1>
               <AnimatedLetters
                 letterClass={letterClass}

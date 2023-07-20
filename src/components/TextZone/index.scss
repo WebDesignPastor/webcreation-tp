@@ -1,4 +1,4 @@
-.text-zone {
+.text-zone, .home-text-zone {
   position: absolute;
   left: 10%;
   top: 50%;
@@ -7,12 +7,6 @@
   vertical-align: middle;
   display: table-cell;
   max-height: 90%;
-
-  @media (max-width: 768px) {
-    width: 80%;
-    top: 25%;
-    left: 20%;
-  }
 
   h1 {
     font-size: 53px;
@@ -71,6 +65,20 @@
     &:nth-of-type(4) {
       animation-delay: 1.4s;
     }
+  }
+}
+
+.text-zone {
+  @media (max-width: 768px) {
+    width: 80%;
+    top: 25%;
+    left: 20%;
+  }
+}
+
+.home-text-zone {
+  @media (max-width: 768px) {
+    // Add the styles for home page's responsive design here
   }
 }
 

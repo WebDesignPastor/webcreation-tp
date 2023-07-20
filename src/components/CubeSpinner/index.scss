@@ -3,7 +3,7 @@
   height: auto;
   position: absolute;
   padding-top: 18%;
-  bottom: 250px;
+  bottom: 190px;
 
   @media (min-width: 768px) {
     width: 50%;
@@ -27,7 +27,12 @@ a {
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
   margin-left: calc(50% - 100px);
-  margin-top: -50px;
+
+  @media (max-width: 768px) {
+    margin-top: -50px;
+    transform-origin: 50px 50px 0; /* Adjust transform origin to the new size */
+    animation-name: spincube-mobile; /* Use a different animation for mobile */
+  }
 
   div {
     position: absolute;
@@ -40,30 +45,60 @@ a {
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 20px 0px lightyellow;
+
+    @media (max-width: 768px) {
+      width: 100px;  /* Make the cube half its original size */
+      height: 100px; /* Make the cube half its original size */
+      font-size: 50px; /* Make the font-size half its original size */
+    }
   }
 
   .face-first-cube-front {
     transform: translateZ(100px);
+
+    @media (max-width: 768px) {
+      transform: translateZ(50px); /* Adjust the translateZ to the new size */
+    }
   }
 
   .face-first-cube-right {
     transform: rotateY(90deg) translateZ(100px);
+
+    @media (max-width: 768px) {
+      transform: rotateY(90deg) translateZ(50px); /* Adjust the translateZ to the new size */
+    }
   }
 
   .face-first-cube-back {
     transform: rotateY(180deg) translateZ(100px);
+
+    @media (max-width: 768px) {
+      transform: rotateY(180deg) translateZ(50px); /* Adjust the translateZ to the new size */
+    }
   }
 
   .face-first-cube-left {
     transform: rotateY(270deg) translateZ(100px);
+
+    @media (max-width: 768px) {
+      transform: rotateY(270deg) translateZ(50px); /* Adjust the translateZ to the new size */
+    }
   }
 
   .face-first-cube-top {
     transform: rotateX(90deg) translateZ(100px);
+
+    @media (max-width: 768px) {
+      transform: rotateX(90deg) translateZ(50px); /* Adjust the translateZ to the new size */
+    }
   }
 
   .face-first-cube-bottom {
     transform: rotateX(-90deg) translateZ(100px);
+
+    @media (max-width: 768px) {
+      transform: rotateX(-90deg) translateZ(50px); /* Adjust the translateZ to the new size */
+    }
   }
 }
 
@@ -86,5 +121,27 @@ a {
   }
   83% {
     transform: rotateX(90deg);
+  }
+}
+
+@keyframes spincube-mobile {
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateZ(45deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(45deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateX(45deg);
+  }
+  83% {
+    transform: rotateX(45deg);
   }
 }

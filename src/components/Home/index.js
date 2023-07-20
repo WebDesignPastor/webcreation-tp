@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <>
     <div className="container home-page">
-      <TextZone>  {/* use TextZone component */}
+      <TextZone className="home-text-zone">
         <h1>
           <AnimatedLetters
             key={`greeting`}
