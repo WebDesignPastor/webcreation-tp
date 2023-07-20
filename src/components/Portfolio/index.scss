@@ -3,6 +3,15 @@
   max-height: 80vh;
   padding: 60px 30px 0px 80px;
   overflow-y: auto;
+
+  @media (min-width: 481px) {
+    padding: 60px 30px 0px 80px;
+  }
+
+  @media (min-width: 769px) {
+    padding: 50px 200px 100px 100px;
+    max-height: 100vh;
+  }
 }
 
 .portfolio {
@@ -12,18 +21,6 @@
   grid-template-columns: repeat(1, 1fr);
   position: relative;
 }
-
-// .gradient-overlay {
-//   position: fixed;
-//   content: '';
-//   bottom: 0;
-//   left: 0;
-//   z-index: 0;
-//   margin-bottom: 15%;
-//   height: 100px;
-//   width: 100%;
-//   background: linear-gradient(transparent, #242f53);
-// }
 
 /* For tablets and small desktop screens */
 @media (min-width: 481px) {

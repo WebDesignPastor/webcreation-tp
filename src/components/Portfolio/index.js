@@ -26,7 +26,6 @@ const Portfolio = () => {
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
-          <div className="gradient-overlay"></div> {/* This is your gradient overlay */}
         </div>
         <Loader type='pacman' />
     </>
